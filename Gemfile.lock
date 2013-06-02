@@ -1,0 +1,26 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    apetag (1.1.5)
+      cicphash (>= 1.0.0)
+    cicphash (1.1.0)
+    flacinfo-rb (0.4)
+    id3lib-ruby (0.6.0)
+    moumar-wmainfo-rb (0.8)
+    mp4info (1.7.3)
+    ruby-audioinfo (0.3.1)
+      apetag (>= 1.1.4)
+      flacinfo-rb (>= 0.4)
+      moumar-wmainfo-rb (>= 0.7)
+      mp4info (>= 1.7.3)
+      ruby-mp3info (>= 0.8)
+      ruby-ogginfo (>= 0.6.11)
+    ruby-mp3info (0.8)
+    ruby-ogginfo (0.6.11)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  id3lib-ruby
+  ruby-audioinfo
