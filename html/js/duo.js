@@ -1347,7 +1347,7 @@ var duo = {
     "en": "I am determined to make a living as a playwright at all costs.",
     "jp": "私はどんな犠牲を払ってでも、脚本家で生計をたてると決心している。"
   },
-  "0": {
+  "338": {
     "en": "As he grew up, he learned to put things in perspective.",
     "jp": null
   },
