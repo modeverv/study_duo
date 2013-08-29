@@ -15,14 +15,25 @@ h.each_line {|line|
   _num  = $1
   _japanese = $2
   _english = _a[0]
-  duo[_num.to_i] = {:en => _english,:jp => _japanese } if !duo[_num.to_i]
-  puts "#{_num}:#{_english}"
+  duo[_num.to_i.to_s] = {"en" => _english,"jp" => _japanese } if !duo[_num.to_i]
+#  puts "#{_num}:#{_english}"
 }
 h.close
 
-#pp duo
+print "$duo = "
+pp duo
+exit
 
 open "./html/js/duo.js", "w" do |io|
+  io.write "var duo = "
+#  puts JSON.generate duo
+#  io.write JSON.generate duo
+#  puts JSON.pretty_generate(duo)
+  io.write JSON.pretty_generate(duo)
+  io.write ';'
+end
+
+open "./html/js/duo.pl", "w" do |io|
   io.write "var duo = "
 #  puts JSON.generate duo
 #  io.write JSON.generate duo

@@ -2,3 +2,5 @@
 study duo3.0!!
 ## USAGE
 opne html/index.html
+## API
+api/{num}/{jp/en}
