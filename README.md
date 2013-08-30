@@ -4,3 +4,5 @@ study duo3.0!!
 open html/index.html
 ## API
 api/{num}/{jp/en}
+## 読み上げ
+現在はiphoneのみ対応

@@ -38,15 +38,22 @@ function duoNext(method){
 function change(method){
    $("#en,#jp").css("display","none");
    var next = duoNext(method);
-   console.log(next[1].en + ":");
    //$("#num").html(next[0]);
-   $("#en").html(next[0] + '. ' +next[1].en);
+   $("#en").html(next[0] + '. ' + next[1].en);
    $("#jp").html(next[1].jp);
    $("#en").css("display","block");
 }
 function view(){
    $("#jp").css("display","block");
 }
+
+var URL = "http://translate.google.com/translate_tts?tl=en&q=";
+function readaudio(){
+    var query = $("#en").html().replace(/\s/g, '+').replace(/\./g, '').replace(/\,/g, '');
+    var audio = new Audio(URL+query);
+    audio.play();
+}
+
 var duocount = 0;
 $(function(){
   for(k in duo){
